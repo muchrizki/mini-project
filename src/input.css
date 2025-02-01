@@ -1,0 +1,19 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+@font-face {
+  font-family: "fairplay";
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+}
+@theme {
+  --font-fairplay: "fairplay", "sans-serif";
+  --font-display--font-feature-settings: "cv02", "cv03", "cv04", "cv11"; 
+  --font-display--font-variation-settings: "opsz" 32; 
+  --font--dmsans: "DM Sans", "sans-serif";
+  --font-dmsans--font-feature-settings: "cv02", "cv03", "cv04", "cv11"; 
+  --font-dmsans--font-variation-settings: "opsz" 32;
+}
