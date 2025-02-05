@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/nav.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/swiper-bundle.min.css">
+
+    <title>Our Cafe | Home Tea</title>
+</head>
+<body class="overflow-x-hidden bg-[#F8F9FA]">
+
+    <nav class="bg-[#F5F2EF] max-w-[1000px] mx-auto w-[100%] sm:h-12 flex justify-between flex-row-reverse relative">
+        <img src="images/logo.png" alt="logo-tea" class="max-w-18 max-h-18 absolute left-5 top-2 drop-shadow-2xl">
+
+        <ul class="hidden sm:flex sm:h-8 sm:p-3 sm:gap-4 sm:mr-4 sm:font-medium">
+            <li class="text-[#1E1E1E] cursor-pointer tracking-widest  text-md"><a href="/index.html">Home</a></li>
+            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/product.html">Products</a></li>
+            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/ourcafe.html">Our Cafe</a></li>
+            <li class="text-[#DE6868] cursor-pointer tracking-widest text-md underline"><a href="">Blogs</a></li>
+            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/about.html">About Us</a></li>
+        </ul>
+
+        <!-- From Uiverse.io by JulanDeAlb --> 
+        <label class="hamburger sm:hidden">
+            <input type="checkbox">
+            <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+            <path class="line" d="M7 16 27 16"></path>
+            </svg>
+        </label>
+    </nav>
+
+    <!-- section 1  -->
+    <section class="bg-[#F8F9FA] p-2 mx-auto max-w-[1000px] mt-16 relative h-[300px] flex flex-col justify-center items-center">
+        <img src="images/line-motif.png" alt="line-motif" class="w-32">
+        <h3 class="font-fairplay text-4xl font-bold tracking-widest mt-2 text-[#2B231D]">Blog Posts</h3>
+        <p class="text-sm mt-2 text-center w-[400px] md:w-[600px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius tortor aliquam. Maecenas ac quam lacinia,</p>
+
+        <div class="search-bar mt-4 flex gap-4">
+            <input type="text" class="z-index-5 border-[#CFBCAE] outline-none w-70 md:w-100 px-4 py-2 border-[0.8px] rounded-lg bg-white text-xs" placeholder="Search menu">
+            <button class="bg-[#2B231D] p-2 rounded-md cursor-pointer hover:shadow-lg hover:translate-y-[-5px] duration-300 ease-in-out"><img src="images/search.png" alt="search" class="w-4"></button>
+        </div>
+
+
+        <img src="images/our-coffee.png" alt="our-coffee" class="w-64 md:w-100 absolute top-0 md:top-[-50px] left-[25%] md:left-[30%]">
+        <img src="/images/home-coffee.png" alt="home" class="w-24 absolute bottom-0 left-0">
+    </section>
+
+    <!-- section 2 -->
+    <section class="max-w-[1000px] mx-auto bg-[#F5F2EF] p-10 flex gap-2 justify-between">
+
+        <div class="container-product bg-cyan-0 w-full lg:w-[75%] p-4 flex items-center flex-col md:grid md:grid-cols-3 gap-6">
+
+            <div class="card-product w-[270px] md:max-w-[200px] mb-4">
+                <img src="images/posts/post-1.png" alt="post-1">
+                <div class="text-post p-1">
+                    <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
+                    <p class="text-xs mt-2 text-[#1E1E1E] tracking-tighter leading-4.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius</p>
+                </div>
+                <div class="button mt-2 flex item-center justify-center px-3 border-[0.4px] border-[#DE6868] py-1 w-fit rounded-md">
+                    <p class="text-xs tracking-widest font-semibold text-[#DE6868] translate-y-[0.6px]">Read More</p>
+                    <img src="images/arrow-right.png" alt="arrow-right" class="w-5">
+                </div>
+            </div>
+
+            <div class="card-product w-[270px] md:max-w-[200px] mb-4">
+                <img src="images/posts/post-2.png" alt="post-2">
+                <div class="text-post p-1">
+                    <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
+                    <p class="text-xs mt-2 text-[#1E1E1E] tracking-tighter leading-4.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius</p>
+                </div>
+                <div class="button mt-2 flex item-center justify-center px-3 border-[0.4px] border-[#DE6868] py-1 w-fit rounded-md">
+                    <p class="text-xs tracking-widest font-semibold text-[#DE6868] translate-y-[0.6px]">Read More</p>
+                    <img src="images/arrow-right.png" alt="arrow-right" class="w-5">
+                </div>
+            </div>
+
+            <div class="card-product w-[270px] md:max-w-[200px] mb-4">
+                <img src="images/posts/post-1.png" alt="post-1">
+                <div class="text-post p-1">
+                    <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
+                    <p class="text-xs mt-2 text-[#1E1E1E] tracking-tighter leading-4.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius</p>
+                </div>
+                <div class="button mt-2 flex item-center justify-center px-3 border-[0.4px] border-[#DE6868] py-1 w-fit rounded-md">
+                    <p class="text-xs tracking-widest font-semibold text-[#DE6868] translate-y-[0.6px]">Read More</p>
+                    <img src="images/arrow-right.png" alt="arrow-right" class="w-5">
+                </div>
+            </div>
+
+            <div class="card-product w-[270px] md:max-w-[200px] mb-4">
+                <img src="images/posts/post-2.png" alt="post-2">
+                <div class="text-post p-1">
+                    <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
+                    <p class="text-xs mt-2 text-[#1E1E1E] tracking-tighter leading-4.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius</p>
+                </div>
+                <div class="button mt-2 flex item-center justify-center px-3 border-[0.4px] border-[#DE6868] py-1 w-fit rounded-md">
+                    <p class="text-xs tracking-widest font-semibold text-[#DE6868] translate-y-[0.6px]">Read More</p>
+                    <img src="images/arrow-right.png" alt="arrow-right" class="w-5">
+                </div>
+            </div>
+
+            <div class="card-product w-[270px] md:max-w-[200px] mb-4">
+                <img src="images/posts/post-1.png" alt="post-1">
+                <div class="text-post p-1">
+                    <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
+                    <p class="text-xs mt-2 text-[#1E1E1E] tracking-tighter leading-4.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius</p>
+                </div>
+                <div class="button mt-2 flex item-center justify-center px-3 border-[0.4px] border-[#DE6868] py-1 w-fit rounded-md">
+                    <p class="text-xs tracking-widest font-semibold text-[#DE6868] translate-y-[0.6px]">Read More</p>
+                    <img src="images/arrow-right.png" alt="arrow-right" class="w-5">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-category hidden bg-gray-0 p-1 lg:flex flex-col items-center lg:mt-14">
+            
+            <div class="search-category bg-[#CFBCAE] w-[230px] p-2 flex flex-col justify-center items-center rounded-sm">
+                <h4 class="text-sm font-fairplay font-semibold tracking-wide">CATEGORIES</h4>
+                <div class="input bg-white w-full rounded-lg flex gap-2 justify-between mt-2">
+                    <input type="text" class="w-[140px] outline-none text-xs text-[#2B231D] p-2" placeholder="Select Category">
+                    <img src="images/left-arrow.png" alt="left-arrow" class="w-7 rotate-270">
+                </div>
+            </div>
+
+            <div class="recent-post mt-2 p-2 px-3 flex flex-col justify-center items-center border-[0.6px] border-[#CFBCAE] rounded-lg">
+                <img src="images/line-motif.png" alt="line-motif" class="w-28">
+                <h4 class="text-lg font-fairplay font-semibold tracking-wide">Recent Posts</h4>
+
+                <div class="container-product bg-cyan-0 w-full mt-6">
+
+                    <div class="card-product max-w-[200px] mb-4">
+                        <img src="images/posts/post-1.png" alt="post-1">
+                        <div class="text-post p-1">
+                            <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
+                            <p class="text-xs mt-2 text-[#1E1E1E] tracking-tighter leading-4.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius</p>
+                        </div>
+                        <div class="button mt-2 flex item-center justify-center px-3 border-[0.4px] border-[#DE6868] py-1 w-fit rounded-md">
+                            <p class="text-xs tracking-widest font-semibold text-[#DE6868] translate-y-[0.6px]">Read More</p>
+                            <img src="images/arrow-right.png" alt="arrow-right" class="w-5">
+                        </div>
+                    </div>
+
+                    <div class="card-product max-w-[200px] mb-4">
+                        <img src="images/posts/post-1.png" alt="post-1">
+                        <div class="text-post p-1">
+                            <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
+                            <p class="text-xs mt-2 text-[#1E1E1E] tracking-tighter leading-4.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius</p>
+                        </div>
+                        <div class="button mt-2 flex item-center justify-center px-3 border-[0.4px] border-[#DE6868] py-1 w-fit rounded-md">
+                            <p class="text-xs tracking-widest font-semibold text-[#DE6868] translate-y-[0.6px]">Read More</p>
+                            <img src="images/arrow-right.png" alt="arrow-right" class="w-5">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="footer max-w-[1000px] mx-auto bg-[#F5F2EF] mt-16 px-4 py-10 flex flex-col items-center lg:grid lg:grid-cols-5 justify-center gap-6 lg:gap-2  relative">
+        <div class="logo flex gap-2 p-2">
+            <img src="images/logo.png" alt="logo" class="w-20 h-20">
+            <h3 class="text-3xl text-[#2B231D] font-fairplay font-bold tracking-widest">LET's <br> TEA</h3>
+        </div>
+
+        <div class="col-span-2 py-2 px-5 text-center lg:text-left">
+        
+            <h3 class="text-2xl text-[#2B231D] font-bold font-fairplay tracking-wider">News Letter</h3>
+            <input type="text" class="border-[#2B231D] border-[0.7px] rounded-lg mt-2 font-medium px-3 py-1 text-sm" placeholder="E-mail">
+            <button class="ml-4 bg-[#2B231D] mt-2 lg:mt-0 text-white px-4 py-1 tracking-wider font-base rounded-lg">Subscribe</button>
+            <p class="text-[#1E1E1E] mt-2 text-xs">Sign up with your email address to receive news and updates</p>
+
+        </div>
+
+        <div class="text-center">
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Our Cafe</li>
+                <li>Blogs</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <h3 class="text-1xl text-[#2B231D] font-bold font-fairplay tracking-wider">Contact Us</h3>
+            <p class="text-sm mt-1">Any where, Any city,445533</p class="text-sm">
+            <p class="text-sm mt-1">Call Us: +919999988888</p>
+            <p class="text-sm mt-1">example@gmail.com</p>
+        </div>
+
+        <hr class="text-[#AA9F96] cols-span-5 absolute w-full bottom-8">
+
+        <p class="font-medium text-[#AA9F96] md:absolute translate-y-10 md:translate-y-0 md:translate-x-30 lg:translate-x-0 mb-2 md:mb-0 right-90 md:bottom-2 tracking-wider text-xs">Copyright ©2023 LET’s TEA. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

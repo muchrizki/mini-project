@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/nav.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/swiper-bundle.min.css">
+
+    <title>Our Cafe | Home Tea</title>
+</head>
+<body class="overflow-x-hidden bg-[#F8F9FA]">
+
+    <nav class="bg-[#F5F2EF] max-w-[1000px] mx-auto w-[100%] sm:h-12 flex justify-between flex-row-reverse relative">
+        <img src="images/logo.png" alt="logo-tea" class="max-w-18 max-h-18 absolute left-5 top-2 drop-shadow-2xl">
+
+        <ul class="hidden sm:flex sm:h-8 sm:p-3 sm:gap-4 sm:mr-4 sm:font-medium">
+            <li class="text-[#1E1E1E] cursor-pointer tracking-widest  text-md"><a href="/index.html">Home</a></li>
+            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/product.html">Products</a></li>
+            <li class="text-[#DE6868] cursor-pointer tracking-widest text-md underline"><a href="/ourcafe.html">Our Cafe</a></li>
+            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/blogs.html">Blog</a></li>
+            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/about.html">About Us</a></li>
+        </ul>
+
+        <!-- From Uiverse.io by JulanDeAlb --> 
+        <label class="hamburger sm:hidden">
+            <input type="checkbox">
+            <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+            <path class="line" d="M7 16 27 16"></path>
+            </svg>
+        </label>
+    </nav>
+
+    <!-- section 1  -->
+    <section class="bg-[#F8F9FA] p-2 mx-auto max-w-[1000px] mt-16 relative h-[300px] flex flex-col justify-center items-center">
+        <img src="images/line-motif.png" alt="line-motif" class="w-32">
+        <h3 class="font-fairplay text-4xl font-bold tracking-widest mt-2 text-[#2B231D]">Our Cafe</h3>
+        <p class="text-sm mt-2 text-center w-[400px] md:w-[600px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius tortor aliquam. Maecenas ac quam lacinia,</p>
+
+        <div class="search-bar mt-4 flex gap-4">
+            <input type="text" class="z-index-5 border-[#CFBCAE] outline-none w-70 md:w-100 px-4 py-2 border-[0.8px] rounded-lg bg-white text-xs" placeholder="Search menu">
+            <button class="bg-[#2B231D] p-2 rounded-md cursor-pointer hover:shadow-lg hover:translate-y-[-5px] duration-300 ease-in-out"><img src="images/search.png" alt="search" class="w-4"></button>
+        </div>
+
+
+        <img src="images/our-coffee.png" alt="our-coffee" class="w-64 md:w-100 absolute top-0 md:top-[-50px] left-[25%] md:left-[30%]">
+        <img src="/images/home-coffee.png" alt="home" class="w-24 absolute bottom-0 left-0">
+    </section>
+
+    <!-- section 2  -->
+    <section class="bg-[#F5F2EF] max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center">
+    <img src="images/line-motif.png" alt="" class="w-32">
+    <h3 class="text-4xl mt-2 tracking-widest font-fairplay font-bold text-[#2B231D]">Most Popular</h3>
+
+    <div class="popular-product bg-0 mt-0 translate-y-[-30px] p-10 relative">
+        <div class="popular-product-img bg-cyan-0 p-0 overflow-hidden max-w-[500px] md:max-w-[700px]">
+            <div class="img-wrapper flex bg-gray-0">
+            
+                <img src="images/vanilla-latte.png" alt="vanilla-latte" class="w-full max-w-[500px] md:max-w-[700px] shrink-0">
+
+                <img src="images/vanilla-latte.png" alt="vanilla-latte" class="w-full max-w-[500px] md:max-w-[700px] shrink-0">
+
+                <img src="images/vanilla-latte.png" alt="vanilla-latte" class="w-full max-w-[500px] md:max-w-[700px] shrink-0">
+            
+            </div>
+
+
+        </div>
+
+        <img src="images/left-arrow.png" alt="left-arrow" class="w-10 cursor-pointer hover:shadow-4xl  absolute top-25 md:top-43  left-0">
+        <img src="images/left-arrow.png" alt="left-arrow" class="w-10 cursor-pointer hover:shadow-4xl  absolute top-25 md:top-43 right-1 rotate-180">
+    </div>
+    </section>
+
+    <!-- section 3  -->
+    <section class="bg-white max-w-[1000px] mx-auto p-2 flex flex-col justify-center items-center">
+        <img src="images/line-motif.png" alt="line-motif" class="w-32">
+        <h3 class="font-bold tracking-widest text-4xl text-[#2B231D] font-fairplay mt-2">We Serve</h3>
+        <div class="menu bg-cyan-0 w-full mt-4 px-6 py-2">
+            <h3 class="font-bold tracking-widest text-2xl text-[#2B231D] font-fairplay mt-2">Drinks</h3>
+            
+            <div class="cotainer-drinks-menu bg-white p-1 mt-4 flex flex-col md:grid md:grid-cols-2 md:grid-flow-row ">
+                
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/drinks/v-latte.png" alt="v-latte" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">VANILLA LATTE</h3>
+                        <p class="text-xs mt-3 tracking-wider">Vanilla Latte is a coffee drink made with espresso, steamed milk, and vanilla syrup</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/drinks/twcc.png" alt="twcc" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">TANGERINE WHITE <br> CHOCOLATE CAPACHINO</h3>
+                        <p class="text-xs mt-3 tracking-wider">blend of tangerine white chocolate sauce, espresso & cream, topped with yummy whipped cream, Serving</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/drinks/espresso.png" alt="espresso" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">ESPRESSO</h3>
+                        <p class="text-xs mt-3 tracking-wider">is a coffee -brewing method of Italian origin,</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/drinks/kulhad-tea.png" alt="espresso" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">KULHAD TEA</h3>
+                        <p class="text-xs mt-3 tracking-wider">Chai, when served in kulhads, becomes extra sweet and special.</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/drinks/vanilla-cappuccino.png" alt="espresso" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">VANILLA CAPPUCCINO</h3>
+                        <p class="text-xs mt-3 tracking-wider">vanilla cappuccino is a coffee drink that is made with espresso, steamed milk, and foam that has been flavored with vanilla syrup.</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/drinks/green-tea.png" alt="espresso" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">GREEN TEA</h3>
+                        <p class="text-xs mt-3 tracking-wider">sweet, bittersweet, nutty, vegetal, buttery, floral, swampy, fruity, and oceanic.</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/drinks/hot-chai-latte.png" alt="espresso" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">HOT CHAI LATTE</h3>
+                        <p class="text-xs mt-3 tracking-wider">an Indian beverage popular throughout South Asia</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/drinks/assam-chai.png" alt="espresso" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">ASSAM CHAI </h3>
+                        <p class="text-xs mt-3 tracking-wider">vanilla cappuccino is a coffee drink that is made with espresso, steamed milk, and foam that has been flavored with vanilla syrup.</p>
+                    </div>
+                </div>
+
+                
+                
+
+            </div>
+
+            <h3 class="font-bold tracking-widest text-2xl text-[#2B231D] font-fairplay mt-2">Foods</h3>
+
+            <div class="cotainer-foods-menu bg-white p-1 mt-4 flex flex-col md:grid md:grid-cols-2 md:grid-flow-row ">
+                
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/foods/food-1.png" alt="v-latte" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">CHEESE TOAST</h3>
+                        <p class="text-xs mt-3 tracking-wider">is a coffee -brewing method of Italian origin,</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/foods/food-2.png" alt="twcc" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">CHEESE TOAST</h3>
+                        <p class="text-xs mt-3 tracking-wider">blend of tangerine white chocolate sauce, espresso & cream, topped with yummy whipped cream, Serving</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/foods/food-3.png" alt="espresso" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">CHEESE</h3>
+                        <p class="text-xs mt-3 tracking-wider">is a coffee -brewing method of Italian origin,</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/foods/food-4.png" alt="espresso" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">BREADS</h3>
+                        <p class="text-xs mt-3 tracking-wider">Chai, when served in kulhads, becomes extra sweet and special.</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/foods/food-5.png" alt="espresso" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">BREADS</h3>
+                        <p class="text-xs mt-3 tracking-wider">vanilla cappuccino is a coffee drink that is made with espresso, steamed milk, and foam that has been flavored with vanilla syrup.</p>
+                    </div>
+                </div>
+
+                <div class="card-menu hover:drop-shadow-md flex border-[0px] w-fit gap-4 justify-center p-2">
+                    <img src="images/foods/food-6.png" alt="espresso" class="w-28">
+                    <div class="text w-[250px]">
+                        <h3 class="title font-fairplay text-base tracking-wide font-semibold">BREADS</h3>
+                        <p class="text-xs mt-3 tracking-wider">sweet, bittersweet, nutty, vegetal, buttery, floral, swampy, fruity, and oceanic.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="footer max-w-[1000px] mx-auto bg-[#F5F2EF] mt-16 px-4 py-10 flex flex-col items-center lg:grid lg:grid-cols-5 justify-center gap-6 lg:gap-2  relative">
+        <div class="logo flex gap-2 p-2">
+            <img src="images/logo.png" alt="logo" class="w-20 h-20">
+            <h3 class="text-3xl text-[#2B231D] font-fairplay font-bold tracking-widest">LET's <br> TEA</h3>
+        </div>
+
+        <div class="col-span-2 py-2 px-5 text-center lg:text-left">
+        
+            <h3 class="text-2xl text-[#2B231D] font-bold font-fairplay tracking-wider">News Letter</h3>
+            <input type="text" class="border-[#2B231D] border-[0.7px] rounded-lg mt-2 font-medium px-3 py-1 text-sm" placeholder="E-mail">
+            <button class="ml-4 bg-[#2B231D] mt-2 lg:mt-0 text-white px-4 py-1 tracking-wider font-base rounded-lg">Subscribe</button>
+            <p class="text-[#1E1E1E] mt-2 text-xs">Sign up with your email address to receive news and updates</p>
+
+        </div>
+
+        <div class="text-center">
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Our Cafe</li>
+                <li>Blogs</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <h3 class="text-1xl text-[#2B231D] font-bold font-fairplay tracking-wider">Contact Us</h3>
+            <p class="text-sm mt-1">Any where, Any city,445533</p class="text-sm">
+            <p class="text-sm mt-1">Call Us: +919999988888</p>
+            <p class="text-sm mt-1">example@gmail.com</p>
+        </div>
+
+        <hr class="text-[#AA9F96] cols-span-5 absolute w-full bottom-8">
+
+        <p class="font-medium text-[#AA9F96] md:absolute translate-y-10 md:translate-y-0 mb-2 md:mb-0 right-90 md:bottom-2 tracking-wider text-xs">Copyright ©2023 LET’s TEA. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
