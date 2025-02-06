@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="./src/nav.css">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>About Us | Home Tea</title>
 </head>
 <body class="overflow-x-hidden bg-[#F8F9FA]">
 
+    <!-- navbar  -->
     <nav class="bg-[#F5F2EF] max-w-[1000px] mx-auto w-[100%] sm:h-12 flex justify-between flex-row-reverse relative">
         <img src="images/logo.png" alt="logo-tea" class="max-w-18 max-h-18 absolute left-5 top-2 drop-shadow-2xl">
 
-        <ul class="hidden sm:flex sm:h-8 sm:p-3 sm:gap-4 sm:mr-4 sm:font-medium">
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest  text-md"><a href="/index.html">Home</a></li>
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/product.html">Products</a></li>
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/ourcafe.html">Our Cafe</a></li>
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/blogs.html">Blog</a></li>
-            <li class="text-[#DE6868] cursor-pointer tracking-widest text-md underline"><a href="/about.html">About Us</a></li>
+        <ul class="nav hidden bg-gray-100 w-[50vw] sm:w-fit border-[0.7px] gap-6 border-[#DE6868] sm:border-none z-10 p-6 rounded-lg top-20 right-10  sm:flex sm:h-8 sm:p-3 sm:gap-4 sm:mr-4 sm:font-medium ease-in-out duration-1000">
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base"> <a href="/index.html">Home</a></li>
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base"><a href="/product.html">Products</a></li>
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base"><a href="/ourcafe.html">Our Cafe</a></li>
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base  "><a href="/blogs.html">Blog</a></li>
+            <li class="text-[#DE6868] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base sm:underline"><a href="/about.html">About Us</a></li>
         </ul>
 
         <!-- From Uiverse.io by JulanDeAlb --> 
-        <label class="hamburger sm:hidden">
-            <input type="checkbox">
+        <label class="btn-nav hamburger sm:hidden">
+            <input type="checkbox" class="check-nav">
             <svg viewBox="0 0 32 32">
             <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
             <path class="line" d="M7 16 27 16"></path>
@@ -36,7 +38,7 @@
 
     <!-- section 1  -->
     <section class="max-w-[1000px] mx-auto bg-[url(/images/about/bg-about.png)] bg-cover mt-[-60px] h-[400px]">
-        <div class="konten translate-y-45 bg-cyan p-6 md:translate-x-17">
+        <div data-aos="fade-left" data-aos-duration="3000" class="konten translate-y-45 bg-cyan p-6 md:translate-x-17">
             <img src="images/line-motif.png" alt="line-motif" class="w-42">
             <h3 class="text-3xl font-fairplay font-bold tracking-widest mt-3 text-[#2B231D]">ABOUT US</h3>
             <p class="text-base pl-2 mt-3 max-w-[600px] text-[#1E1E1E]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius tortor aliquam. Maecenas ac quam lacinia,</p>
@@ -46,9 +48,9 @@
     <!-- section 2 -->
     <section class="max-w-[1000px] mx-auto mt-8 bg-[#F5F2EF] p-20 pb-0 flex flex-col md:flex-row gap-14 justify-center items-center">
         
-        <img src="images/about/best-product.png" alt="best-product" class="w-90 md:h-54 md:w-68 lg:w-90 lg:h-75">
+        <img data-aos="fade-left" data-aos-duration="3000" src="images/about/best-product.png" alt="best-product" class="w-90 md:h-54 md:w-68 lg:w-90 lg:h-75">
 
-        <div class="right-konten-about-section-2">
+        <div data-aos="fade-right" data-aos-duration="3000" class="right-konten-about-section-2">
             <img src="images/line-motif.png" alt="line-motif" class="w-36 translate-x-16">
             <h3 class="text-3xl font-fairplay font-bold tracking-widest mt-6 text-[#2B231D]">ENJOY BEST <br> QUALITY PRODUCTS</h3>
             <p class="text-sm mt-6 max-w-[400px] text-[#1E1E1E]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius tortor aliquam. Maecenas ac quam lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius tortconsectetur</p>
@@ -58,9 +60,9 @@
     <!-- section 3   -->
     <section class="max-w-[1000px] mx-auto bg-[#F5F2EF] p-20 flex flex-col md:flex-row-reverse gap-14 justify-center items-center">
         
-        <img src="images/about/video-about.png" alt="best-product" class="w-90 md:h-54 md:w-68 lg:w-90 lg:h-75">
+        <img data-aos="fade-up" data-aos-duration="3000" src="images/about/video-about.png" alt="best-product" class="w-90 md:h-54 md:w-68 lg:w-90 lg:h-75">
 
-        <div class="right-konten-about-section-2">
+        <div data-aos="fade-up" data-aos-duration="3000" class="right-konten-about-section-2">
             <img src="images/line-motif.png" alt="line-motif" class="w-36 translate-x-16">
             <h3 class="text-3xl font-fairplay font-bold tracking-widest mt-6 text-[#2B231D]">COZY ABIANCE <br> and ENVIRONMENT </h3>
             <p class="text-sm mt-6 max-w-[400px] text-[#1E1E1E]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius tortor aliquam. Maecenas ac quam lacinia, Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
@@ -80,7 +82,7 @@
 
         <div class="container-team mt-8 w-full flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-8">
 
-            <div class="card-person bg-cyan-200 w-fit rounded-xl relative mb-10 shadow-2xl">
+            <div data-aos="fade-down" data-aos-duration="3000" class="card-person bg-cyan-200 w-fit rounded-xl relative mb-10 shadow-2xl">
                 <img src="images/about/person-1.png" alt="person-1" class="w-48">
                 <div class="text bg-[#F5F2EF] p-2 flex flex-col items-center rounded-b-xl">
                     <h4 class="font-fairplay text-2xl font-semibold text-[#2B231D] tracking-widest">Niraj Sharma</h4>
@@ -96,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="card-person bg-cyan-200 w-fit rounded-xl relative mb-10 shadow-2xl">
+            <div data-aos="fade-down" data-aos-duration="3000" class="card-person bg-cyan-200 w-fit rounded-xl relative mb-10 shadow-2xl">
                 <img src="images/about/person-2.png" alt="person-2" class="w-48">
                 <div class="text bg-[#F5F2EF] p-2 flex flex-col items-center rounded-b-xl">
                     <h4 class="font-fairplay text-2xl font-semibold text-[#2B231D] tracking-widest">Niraj Sharma</h4>
@@ -112,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="card-person bg-cyan-200 w-fit rounded-xl relative mb-10 shadow-2xl">
+            <div data-aos="fade-down" data-aos-duration="3000" class="card-person bg-cyan-200 w-fit rounded-xl relative mb-10 shadow-2xl">
                 <img src="images/about/person-3.png" alt="person-3" class="w-48">
                 <div class="text bg-[#F5F2EF] p-2 flex flex-col items-center rounded-b-xl">
                     <h4 class="font-fairplay text-2xl font-semibold text-[#2B231D] tracking-widest">Niraj Sharma</h4>
@@ -128,7 +130,7 @@
                 </div>
             </div>
 
-            <div class="card-person bg-cyan-200 w-fit rounded-xl relative mb-10 shadow-2xl">
+            <div data-aos="fade-down" data-aos-duration="3000" class="card-person bg-cyan-200 w-fit rounded-xl relative mb-10 shadow-2xl">
                 <img src="images/about/person-4.png" alt="person-4" class="w-48">
                 <div class="text bg-[#F5F2EF] p-2 flex flex-col items-center rounded-b-xl">
                     <h4 class="font-fairplay text-2xl font-semibold text-[#2B231D] tracking-widest">Niraj Sharma</h4>
@@ -154,7 +156,7 @@
         
         <div class="container-review mt-6 p-4 flex flex-col items-center sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-6">
             
-            <div class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
+            <div data-aos="flip-right" data-aos-duration="3000" class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
                 <p class="text-sm text-[#1E1E1E]">lorem consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis</p>
                 <div class="profile mt-2 flex gap-2">
                     <img src="images/about/review/nahid-photo-1.png" alt="nahid-photo-1" class="rounded-full w-16">
@@ -165,7 +167,7 @@
                 </div>
             </div>  
 
-            <div class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
+            <div data-aos="flip-right" data-aos-duration="3000" class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
                 <p class="text-sm text-[#1E1E1E]">lorem consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis</p>
                 <div class="profile mt-2 flex gap-2">
                     <img src="images/about/review/nahid-photo-2.png" alt="nahid-photo-2" class="rounded-full w-16">
@@ -176,7 +178,7 @@
                 </div>
             </div>  
 
-            <div class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
+            <div data-aos="flip-right" data-aos-duration="3000" class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
                 <p class="text-sm text-[#1E1E1E]">lorem consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis</p>
                 <div class="profile mt-2 flex gap-2">
                     <img src="images/about/review/nahid-photo-3.png" alt="nahid-photo-3" class="rounded-full w-16">
@@ -187,7 +189,7 @@
                 </div>
             </div>  
 
-            <div class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
+            <div data-aos="flip-right" data-aos-duration="3000" class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
                 <p class="text-sm text-[#1E1E1E]">lorem consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis</p>
                 <div class="profile mt-2 flex gap-2">
                     <img src="images/about/review/nahid-photo-4.png" alt="nahid-photo-4" class="rounded-full w-16">
@@ -198,7 +200,7 @@
                 </div>
             </div>  
 
-            <div class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
+            <div data-aos="flip-right" data-aos-duration="3000" class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
                 <p class="text-sm text-[#1E1E1E]">lorem consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis</p>
                 <div class="profile mt-2 flex gap-2">
                     <img src="images/about/review/nahid-photo-5.png" alt="nahid-photo-5" class="rounded-full w-16">
@@ -209,7 +211,7 @@
                 </div>
             </div>  
 
-            <div class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
+            <div data-aos="flip-right" data-aos-duration="3000" class="card-review bg-[#F5F2EF] max-w-[220px] p-4 rounded-lg shadow-2xl lg:mb-3">  
                 <p class="text-sm text-[#1E1E1E]">lorem consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis</p>
                 <div class="profile mt-2 flex gap-2">
                     <img src="images/about/review/nahid-photo-6.png" alt="nahid-photo-6" class="rounded-full w-16">
@@ -222,29 +224,6 @@
 
         </div>
      </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <div class="footer max-w-[1000px] mx-auto bg-[#F5F2EF] px-4 py-10 flex flex-col items-center lg:grid lg:grid-cols-5 justify-center gap-6 lg:gap-2  relative">
         <div class="logo flex gap-2 p-2">
@@ -283,5 +262,20 @@
         <p class="font-medium text-[#AA9F96] md:absolute translate-y-10 md:translate-y-0 mb-2 md:mb-0 right-90 md:bottom-2 tracking-wider text-xs">Copyright ©2023 LET’s TEA. All rights reserved.</p>
     </div>
 
+    <div class="btn-to-top fixed right-6 bottom-5">
+        <img src="images/left-arrow.png" alt="btn-to-top" class="w-8 text-white rotate-90 bg-[#F5F2EF] border-[0.2px] border-[#1E1E1E] rounded-full cursor-pointer" onclick="toTop()">
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const toTop  = () =>  {
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            })
+        }
+    </script>
+    <script src="src/nav.js"></script>
 </body>
 </html>

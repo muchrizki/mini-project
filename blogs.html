@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="./src/nav.css">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Our Cafe | Home Tea</title>
 </head>
 <body class="overflow-x-hidden bg-[#F8F9FA]">
 
+    <!-- navbar  -->
     <nav class="bg-[#F5F2EF] max-w-[1000px] mx-auto w-[100%] sm:h-12 flex justify-between flex-row-reverse relative">
         <img src="images/logo.png" alt="logo-tea" class="max-w-18 max-h-18 absolute left-5 top-2 drop-shadow-2xl">
 
-        <ul class="hidden sm:flex sm:h-8 sm:p-3 sm:gap-4 sm:mr-4 sm:font-medium">
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest  text-md"><a href="/index.html">Home</a></li>
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/product.html">Products</a></li>
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/ourcafe.html">Our Cafe</a></li>
-            <li class="text-[#DE6868] cursor-pointer tracking-widest text-md underline"><a href="blogs.html">Blog</a></li>
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/about.html">About Us</a></li>
+        <ul class="nav hidden bg-gray-100 w-[50vw] sm:w-fit border-[0.7px] gap-6 border-[#DE6868] sm:border-none z-10 p-6 rounded-lg top-20 right-10  sm:flex sm:h-8 sm:p-3 sm:gap-4 sm:mr-4 sm:font-medium ease-in-out duration-1000">
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base"> <a href="/index.html">Home</a></li>
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base"><a href="/product.html">Products</a></li>
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base"><a href="/ourcafe.html">Our Cafe</a></li>
+            <li class="text-[#DE6868] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base sm:underline"><a href="/blogs.html">Blog</a></li>
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base  "><a href="/about.html">About Us</a></li>
         </ul>
 
         <!-- From Uiverse.io by JulanDeAlb --> 
-        <label class="hamburger sm:hidden">
-            <input type="checkbox">
+        <label class="btn-nav hamburger sm:hidden">
+            <input type="checkbox" class="check-nav">
             <svg viewBox="0 0 32 32">
             <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
             <path class="line" d="M7 16 27 16"></path>
@@ -37,7 +39,7 @@
     <section class="bg-[#F8F9FA] p-2 mx-auto max-w-[1000px] mt-16 relative h-[300px] flex flex-col justify-center items-center">
         <img src="images/line-motif.png" alt="line-motif" class="w-32">
         <h3 class="font-fairplay text-4xl font-bold tracking-widest mt-2 text-[#2B231D]">Blog Posts</h3>
-        <p class="text-sm mt-2 text-center w-[400px] md:w-[600px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius tortor aliquam. Maecenas ac quam lacinia,</p>
+        <p data-aos="fade-up" data-aos-duration="3000" class="text-sm mt-2 text-center w-[400px] md:w-[600px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis elit et mi lobortis, sed varius tortor aliquam. Maecenas ac quam lacinia,</p>
 
         <div class="search-bar mt-4 flex gap-4">
             <input type="text" class="z-index-5 border-[#CFBCAE] outline-none w-70 md:w-100 px-4 py-2 border-[0.8px] rounded-lg bg-white text-xs" placeholder="Search menu">
@@ -54,7 +56,7 @@
 
         <div class="container-product bg-cyan-0 w-full lg:w-[75%] p-4 flex items-center flex-col md:grid md:grid-cols-3 gap-6">
 
-            <div class="card-product w-[270px] md:max-w-[200px] mb-4">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card-product w-[270px] md:max-w-[200px] mb-4">
                 <img src="images/posts/post-1.png" alt="post-1">
                 <div class="text-post p-1">
                     <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
@@ -66,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="card-product w-[270px] md:max-w-[200px] mb-4">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card-product w-[270px] md:max-w-[200px] mb-4">
                 <img src="images/posts/post-2.png" alt="post-2">
                 <div class="text-post p-1">
                     <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
@@ -78,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="card-product w-[270px] md:max-w-[200px] mb-4">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card-product w-[270px] md:max-w-[200px] mb-4">
                 <img src="images/posts/post-1.png" alt="post-1">
                 <div class="text-post p-1">
                     <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
@@ -90,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="card-product w-[270px] md:max-w-[200px] mb-4">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card-product w-[270px] md:max-w-[200px] mb-4">
                 <img src="images/posts/post-2.png" alt="post-2">
                 <div class="text-post p-1">
                     <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
@@ -102,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="card-product w-[270px] md:max-w-[200px] mb-4">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card-product w-[270px] md:max-w-[200px] mb-4">
                 <img src="images/posts/post-1.png" alt="post-1">
                 <div class="text-post p-1">
                     <h3 class="font-fairplay font-semibold text-sm mt-2 text-[#1E1E1E]"> Lorem ipsum dolor sit amet Viv </h3>
@@ -116,7 +118,7 @@
 
         </div>
 
-        <div class="container-category hidden bg-gray-0 p-1 lg:flex flex-col items-center lg:mt-14">
+        <div data-aos="fade-left" data-aos-duration="3000" class="container-category hidden bg-gray-0 p-1 lg:flex flex-col items-center lg:mt-14">
             
             <div class="search-category bg-[#CFBCAE] w-[230px] p-2 flex flex-col justify-center items-center rounded-sm">
                 <h4 class="text-sm font-fairplay font-semibold tracking-wide">CATEGORIES</h4>
@@ -200,6 +202,22 @@
 
         <p class="font-medium text-[#AA9F96] md:absolute translate-y-10 md:translate-y-0 md:translate-x-30 lg:translate-x-0 mb-2 md:mb-0 right-90 md:bottom-2 tracking-wider text-xs">Copyright ©2023 LET’s TEA. All rights reserved.</p>
     </div>
+
+    <div class="btn-to-top fixed right-6 bottom-5">
+        <img src="images/left-arrow.png" alt="btn-to-top" class="w-8 text-white rotate-90 bg-[#F5F2EF] border-[0.2px] border-[#1E1E1E] rounded-full cursor-pointer" onclick="toTop()">
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const toTop  = () =>  {
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            })
+        }
+    </script>
+    <script src="src/nav.js"></script>
 
 </body>
 </html>

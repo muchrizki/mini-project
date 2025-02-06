@@ -11,23 +11,23 @@
 
     <title>Home Tea</title>
 </head>
-<body class="overflow-x-hidden bg-[#F8F9FA]">
+<body class="overflow-x-hidden bg-[#F8F9FA] relative">
 
     <!-- navbar  -->
     <nav class="bg-[#F5F2EF] max-w-[1000px] mx-auto w-[100%] sm:h-12 flex justify-between flex-row-reverse relative">
         <img src="images/logo.png" alt="logo-tea" class="max-w-18 max-h-18 absolute left-5 top-2 drop-shadow-2xl">
 
-        <ul class="hidden sm:flex sm:h-8 sm:p-3 sm:gap-4 sm:mr-4 sm:font-medium">
-            <li class="text-[#DE6868] cursor-pointer tracking-widest underline text-md"> <a href="/index.html">Home</a></li>
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/product.html">Products</a></li>
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/ourcafe.html">Our Cafe</a></li>
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/blogs.html">Blog</a></li>
-            <li class="text-[#1E1E1E] cursor-pointer tracking-widest text-md"><a href="/about.html">About Us</a></li>
+        <ul class="nav hidden transition-all bg-gray-100 w-[50vw] sm:w-fit border-[0.7px] gap-6 border-[#DE6868] sm:border-none z-10 p-6 rounded-lg top-20 right-10  sm:flex sm:h-8 sm:p-3 sm:gap-4 sm:mr-4 sm:font-medium ease-in-out duration-1000">
+            <li class="text-[#DE6868] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:underline sm:text-base"> <a href="/index.html">Home</a></li>
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base"><a href="/product.html">Products</a></li>
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base"><a href="/ourcafe.html">Our Cafe</a></li>
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base"><a href="/blogs.html">Blog</a></li>
+            <li class="text-[#1E1E1E] text-xl mb-2 font-semibold cursor-pointer tracking-widest sm:text-base"><a href="/about.html">About Us</a></li>
         </ul>
 
         <!-- From Uiverse.io by JulanDeAlb --> 
-        <label class="hamburger sm:hidden">
-            <input type="checkbox">
+        <label class="btn-nav hamburger sm:hidden">
+            <input type="checkbox" class="check-nav">
             <svg viewBox="0 0 32 32">
             <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
             <path class="line" d="M7 16 27 16"></path>
@@ -325,9 +325,20 @@
         <p class="font-medium text-[#AA9F96] md:absolute translate-y-10 md:translate-y-0 mb-2 md:mb-0 right-90 md:bottom-2 tracking-wider text-xs">Copyright ©2023 LET’s TEA. All rights reserved.</p>
     </div>
 
+    <div class="btn-to-top fixed right-6 bottom-5">
+        <img src="images/left-arrow.png" alt="btn-to-top" class="w-8 text-white rotate-90 bg-[#F5F2EF] border-[0.2px] border-[#1E1E1E] rounded-full cursor-pointer" onclick="toTop()">
+    </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        const toTop  = () =>  {
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            })
+        }
     </script>
+    <script src="src/nav.js"></script>
 </body>
 </html>
